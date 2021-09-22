@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font: 12px/1.3 Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.current {
+    background-color: #eb7350 !important;
+}
+
+
+/* weibo nav */
+
+.wb-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.wb-nav .wb-logo {
+    position: absolute;
+    left: 100px;
+    width: 80px;
+    height: 27px;
+}
+
+.wb-nav .search-box {
+    position: absolute;
+    left: 212px;
+    width: 33%;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f5;
+}
+
+.search-box .search-input {
+    width: 95%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.search-box .icon-search {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #696e78;
+}
+
+.wb-nav .nav-right {
+    display: flex;
+    position: absolute;
+    right: 70px;
+    width: 457px;
+    height: 100%;
+}
+
+.nav-right .nav-items {
+    width: 340px;
+    height: 100%;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-items ul li {
+    padding: 0 12px;
+}
+
+.nav-items ul li a:hover span {
+    color: #eb7350 !important;
+}
+
+.nav-items ul li a .iconfont {
+    font-size: 22px;
+    vertical-align: middle;
+    color: #696e78;
+}
+
+.nav-items ul li a span:last-child {
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-right .nav-login {
+    width: 117px;
+    height: 100%;
+}
+
+.nav-login ul {
+    display: flex;
+    margin-top: 14px;
+}
+
+.nav-login ul li {
+    padding: 0 14px;
+}
+
+.nav-login ul li.line {
+    color: #ccc;
+    padding: 0;
+}
+
+.nav-login ul li a {
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-login ul li a:hover {
+    color: #eb7350;
+}
+
+.wb-main {
+    margin-top: 50px;
+}
+
+.w {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+.left-nav-items {
+    width: 110px;
+}
+
+.left-nav-items ul li {
+    margin-bottom: 2px;
+}
+
+.left-nav-items ul li a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.left-nav-items ul li:first-child a {
+    background: linear-gradient( 128deg, #fa2f2f 0%, #ff5b36 90%);
+    color: #fff;
+}
+
+.left-nav-items ul li a:hover {
+    background: linear-gradient( 128deg, #fa2f2f 0%, #ff5b36 90%);
+    color: #fff;
+}
+
+.middle-content {
+    width: 660px;
+}
+
+.middle-content .carousel {
+    position: relative;
+    width: 660px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel ul.pic-items {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 800%;
+}
+
+.carousel ul.pic-items li {
+    width: 660px;
+}
+
+.carousel ul.dot-items {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -64px;
+}
+
+.carousel ul.dot-items li {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.middle-items ul li {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid #eee;
+}
+
+.middle-items ul li .item-pic {
+    width: 158px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.middle-items ul li .item-description {
+    width: 100%;
+}
+
+.middle-items ul li .item-description .sub-content {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.item-description .sub-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #808080;
+    margin-top: 10px;
+}
+
+.sub-info img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.sub-info .nickname {
+    margin-right: 10px;
+}
+
+.sub-info .icon-items {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.sub-info .icon-items span {
+    margin-right: 5px;
+    color: #808080;
+    font-size: 12px;
+}
+
+.sub-info .icon-items span.iconfont {
+    color: #696e78;
+    font-size: 16px;
+}
+
+.sub-info .icon-items span.iconfont:hover {
+    color: #eb7350;
+}
+
+.w .right-login {
+    position: relative;
+    width: 340px;
+    height: 326px;
+    background-color: #f2f2f5;
+}
+
+.right-login .login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -143px;
+    width: 300px;
+    height: 286px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 0 15px;
+}
+
+.login-box .title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 44px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.login-box .user,
+.login-box .pwd {
+    width: 100%;
+    height: 34px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    padding-left: 34px;
+    color: #808080;
+}
+
+.login-box .user::placeholder,
+.login-box .pwd::placeholder {
+    color: #808080;
+    font-size: 12px;
+}
+
+.usertip,
+.pwdtip {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    margin-left: -75px;
+    /* display: block; */
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 20%);
+    color: #333;
+}
+
+.pwdtip {
+    top: 66px !important;
+}
+
+.icon-tishi_ {
+    display: inline-block;
+    color: skyblue;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 4px;
+}
+
+.icon-guanbi {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.usertip::before,
+.pwdtip::before {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -4px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+}
+
+.login-box .title a {
+    padding: 5px 40px;
+    border-bottom: 3px solid #fa7d3c;
+    color: #000;
+    font-size: 14px;
+}
+
+.login-box .user-icon {
+    position: absolute;
+    left: 25px;
+    top: 66px;
+    color: #808080;
+}
+
+.login-box .pwd-icon {
+    position: absolute;
+    left: 25px;
+    top: 110px;
+    color: #808080;
+}
+
+.login-box .checkbox {
+    width: 13px;
+    height: 13px;
+}
+
+.auto-login {
+    font-size: 12px;
+    color: #808080;
+}
+
+.auto-login .checkbox {
+    vertical-align: middle;
+}
+
+.auto-login a {
+    float: right;
+    color: #808080;
+}
+
+.auto-login a:hover {
+    color: #eb7350;
+}
+
+.login-btn {
+    width: 100%;
+    height: 34px;
+    background-color: #ff8140;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #f77c3d;
+}
+
+.register {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+    color: #808080;
+}
+
+.register a {
+    color: #eb7350;
+}
